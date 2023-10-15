@@ -1,0 +1,331 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(#fbe967,#d6e6c4);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+/* main heading */
+
+#heading_div{
+  height: 30vh;
+  width: 100%;
+  /* background-color: #b3c4e7; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainHeading{
+  font-family:'Lobster', cursive;
+  font-size :5vw ;
+  text-align: center;
+}
+
+.inpdiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 3vh;
+}
+
+#inp{
+  width: 40vw;
+  height: 5vh;
+  border-radius: 7px;
+  font-family:'Times New Roman', Times, serif;
+}
+.inpbtn{
+  margin-left: 5px;
+  width: 8vw;
+  height: 5vh;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all ease-in-out 0.25s;
+  background:linear-gradient(rgb(180, 178, 178) ,rgb(99, 84, 84));
+  color: white;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes ani {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.inpbtn:hover{
+  background:linear-gradient(rgb(78, 78, 151),rgb(161, 161, 89));
+  animation: ani 0.5s ease-in-out 1;
+}
+
+#date{
+  height: 5vh;
+  border-radius: 6px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* main rendring div */
+
+#main{
+  display: flex;
+  flex-direction: column;
+}
+
+#main table{
+  margin-top: 2vh;
+}
+
+
+#item_li{
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  /* font-weight: bold; */
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+
+  height: 4.5vh;
+  background-color: rgb(250, 239, 220);
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: all ease-in-out 2;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 2px;
+
+  white-space:normal;
+}
+
+
+#deleteBtn{
+  height: 5vh;
+  width: 2vw;
+  cursor: pointer;
+}
+
+
+
+/* filter nd delete all */
+.btn2{
+  margin-top: 3vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  display: flex;
+  flex-direction: row;
+  align-items:center ;
+  justify-content: space-around;
+}
+
+#filter{
+  width: 8vw;
+  height: 5vh;
+  background: linear-gradient(to right ,rgb(110, 239, 228),rgb(194, 253, 163));
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  transition: all ease-in-out 0.3s;
+}
+
+#filter:hover{
+  background: linear-gradient(to left,rgb(221, 255, 53) ,rgb(246, 239, 181));
+  transform:scale(1.05);
+}
+
+#delAll{
+  width: 9vw;
+  height: 5vh;
+  background:linear-gradient(to right, rgb(243, 193, 193),rgb(238, 67, 67));
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  transition: all ease-in 0.3s;
+}
+
+#delAll:hover{
+  background:linear-gradient(to left,red,rgb(233, 58, 58));
+  transform:scale(1.05);
+}
+
+
+/* tasks menu */
+
+.tags{
+  display: flex;
+  flex-direction: row;
+ margin-left: 15vw;
+ margin-right: 15vw;
+background-color: rgb(214, 226, 220);
+justify-content:space-around;
+align-content: center;
+border-radius: 5px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:large;
+}
+
+.tags th{
+  height: 4vh;
+}
+
+
+/* action btn  */
+
+
+#x_btn{
+  width: 2vw;
+  height: 4vh;
+  background:rgb(255, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  transition: all ease-in 0.1s;
+  margin-right: 0.5vw;
+}
+
+#x_btn:hover {
+  transform: scale(1.05) ;
+}
+
+#M_btn{
+  width: 3.3vw; 
+  height: 4vh; 
+  background:rgb(204, 247, 204);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  transition: all ease-in 0.1s;
+}
+
+#M_btn:hover{
+  transform: scale(1.03);
+}
+
+#E_btn{
+  width: 2.5vw;
+  height: 4vh;
+  background:rgb(248, 196, 99);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  transition: all ease-in 0.1s;
+  margin-left: 0.5vw;
+}
+
+#E_btn:hover{
+  transform:scale(1.05);
+}
+
+
+
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  #mainHeading {
+    font-size: 10vw;
+    font-weight: bold;
+  }
+
+  #heading_div{
+    height: 20vh;
+  }
+
+  .inpdiv {
+    flex-direction: row;
+  }
+
+  #inp {
+    width: 40vw;
+    height: 4vh;
+  }
+
+  #date{
+    width: 30vw;
+    height: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .inpbtn {
+    width: 15vw;
+    height: 4vh;
+  }
+
+#delAll{
+  width: 20vw;
+}
+
+.tags{
+  width: 100%;
+  margin-top: 2vh;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+.tags th{
+  font-size: small;
+  height: 3vh;
+}
+
+#item_li{
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  border:none;
+  font-size: small;
+  font-weight: normal;
+  height: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#x_btn{
+  font-weight: normal;
+  height: 2.5vh;
+  width: 4vw;
+}
+
+#M_btn{
+  font-weight: normal;
+  width:8vw;
+  height: 2.5vh;
+}
+
+#E_btn{
+  font-weight: normal;
+  height: 2.5vh;
+  width: 9vw;
+}
+
+}
+
+
+
+/* footer */
+
+footer {
+  background: #333;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
